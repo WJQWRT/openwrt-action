@@ -19,6 +19,7 @@ on:
         default: 'openwrt-21.02'
         type: choice
         options:
+          - 'openwrt-24.10'
           - 'openwrt-23.05'
           - 'openwrt-21.02'
           - 'openwrt-18.06'
@@ -65,7 +66,7 @@ on:
       UPLOAD_RELEASE:
         description: '发布固件到 Github Releases'
         required: false
-        default: 'false'
+        default: 'true'
         type: boolean
       CACHEWRTBUILD_SWITCH:
         description: '缓存加速编译'

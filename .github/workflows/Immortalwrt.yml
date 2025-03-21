@@ -16,7 +16,7 @@ on:
       REPO_BRANCH:
         description: '天灵源码-请选择分支'
         required: true
-        default: 'openwrt-21.02'
+        default: 'openwrt-23.05'
         type: choice
         options:
           - 'openwrt-24.10'
@@ -25,7 +25,6 @@ on:
           - 'openwrt-18.06'
           - 'openwrt-18.06-k5.4'
           - 'master'
-          - 'mt798x'
       CONFIG_FILE:
         description: '请选择[seed文件夹内]的配置文件'
         required: true
@@ -66,7 +65,7 @@ on:
       UPLOAD_RELEASE:
         description: '发布固件到 Github Releases'
         required: false
-        default: 'true'
+        default: 'false'
         type: boolean
       CACHEWRTBUILD_SWITCH:
         description: '缓存加速编译'

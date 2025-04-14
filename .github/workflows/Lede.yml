@@ -149,6 +149,19 @@ jobs:
         export INPUTS_UPDATE_FIRMWARE_ONLINE="${{ github.event.inputs.UPDATE_FIRMWARE_ONLINE }}"
         export INPUTS_COMPILATION_INFORMATION="${{ github.event.inputs.COMPILATION_INFORMATION }}"
         export INPUTS_PACKAGING_FIRMWARE="${{ github.event.inputs.PACKAGING_FIRMWARE }}"
+        # 美观print输入值
+        echo "REPO_BRANCH: ${REPO_BRANCH}"
+        echo "CONFIG_FILE: ${CONFIG_FILE}"
+        echo "CPU_SELECTION: ${CPU_SELECTION}"
+        echo "INFORMATION_NOTICE: ${INFORMATION_NOTICE}"
+        echo "SSH_ACTION: ${SSH_ACTION}"
+        echo "UPLOAD_FIRMWARE: ${UPLOAD_FIRMWARE}"
+        echo "UPLOAD_RELEASE: ${UPLOAD_RELEASE}"
+        echo "CACHEWRTBUILD_SWITCH: ${CACHEWRTBUILD_SWITCH}"
+        echo "UPDATE_FIRMWARE_ONLINE: ${UPDATE_FIRMWARE_ONLINE}"
+        echo "COMPILATION_INFORMATION: ${COMPILATION_INFORMATION}"
+        echo "PACKAGING_FIRMWARE: ${PACKAGING_FIRMWARE}"
+        echo ""
         source build/${{ env.FOLDER_NAME }}/common.sh && Diy_menu1
 
     - name: 部署编译环境

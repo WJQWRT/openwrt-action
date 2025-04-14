@@ -26,6 +26,7 @@ on:
         default: 'x86_64'
         type: choice
         options:
+          - 'x86_64'
           - 'aarch64'
           - 'asus_rt-acrh17'
           - 'd-team_newifi-d2'
